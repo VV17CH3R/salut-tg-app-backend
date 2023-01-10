@@ -18,7 +18,7 @@ bot.on('message', async (msg) => {
   const text = msg.text;
 
     if(text === '/start') {
-        await bot.sendMessage(chatId, 'Заказывайте лучшие сорта клубники у Нас! Доставкой или рассылкой', {
+        await bot.sendMessage(chatId, 'Заказывайте лучшие сорта клубники у Нас! Доставкой или рассылкой.', {
            reply_markup: {
             keyboard:[
                 [{text:'Заполнить форму обратной связи' ,web_app: {url:delivUrl + '/form2'}}]
