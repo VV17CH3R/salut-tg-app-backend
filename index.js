@@ -18,14 +18,14 @@ bot.on('message', async (msg) => {
   const text = msg.text;
 
     if(text === '/start') {
-        await bot.sendMessage(chatId, 'Заказывайте лучшие сорта клубники!!!', {
+        await bot.sendMessage(chatId, 'Заказывайте лучшие сорта клубники у Нас! Доставкой или рассылкой', {
            reply_markup: {
             keyboard:[
                 [{text:'Заполнить форму обратной связи' ,web_app: {url:delivUrl + '/form2'}}]
             ]
            } 
         })
-         await bot.sendMessage(chatId, 'Так же легко заказать рассаду через наш сайт:', {
+         await bot.sendMessage(chatId, 'Используйте официальный сайт ЛПХ "Клубничный салют" для быстрого и удобного заказа:', {
             reply_markup: {
              inline_keyboard:[
                  [{text:'Сайт ЛПХ "Клубничный салют"' ,web_app: {url:mainUrl}}]
